@@ -1,0 +1,78 @@
+//Written By Shashank
+// 1/15/2025
+
+Add Class Student
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace FirstProjectSpring2024A
+{
+
+	public Class Student
+	{
+		// class variables or member variables
+		private int studentID = -1;
+		//private string starID = "n/a";
+		private string firstName = "n/a";
+		private string lastName = "n/a";
+		private string middleName = "n/a";
+
+
+
+		private string major = "n/a";
+		// this is meant to be freshman, sophomore, junior or senior
+		//This would actually be calculated
+		private string year = "n/a"
+
+		//Gets and Sets
+
+		public string FirstName
+		{
+			//This is the bare bones get and set
+			//they usually will have checks and if statements inside
+			get { return this.firstName; }
+			set { this.firstName = value; }
+		}
+
+		public string LastName
+		{
+			get { return this.lastName; }
+			set { this.lastName = value; }
+		}
+
+		public string MiddleName
+		{
+			get { return this.middleName; }
+			set { this.middleName = value; }
+		}
+		
+		public string Major
+		{
+			get { return this.major; }
+			set { this.major = value; }
+		}
+
+		public string Year
+		{
+			get { return this.year; }
+			set { this.year = value; }
+		}
+		
+		//methods
+
+		public override string ToString()
+		{
+			string message = "";
+
+			message = message + "First Name: " + this.FirstName + "\n"
+			message = message + "First Name: " + this.FirstName + "\n"
+			message = message + "First Name: " + this.FirstName + "\n"
+			message = message + "First Name: " + this.FirstName + "\n"
+		}
+
+	}
+
+}
